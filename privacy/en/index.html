@@ -45,51 +45,74 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border
 <body>
 <div class="wrap">
 <header>
-  <a class="brand" href="C:/Program Files/Git/gympo_site/">GYMPO</a>
+  <a class="brand" href="/gympo_site/">GYMPO</a>
   <div class="slogan">Gym In Your Pocket</div>
-  <nav><a href="C:/Program Files/Git/gympo_site/privacy/">Русский</a><a href="C:/Program Files/Git/gympo_site/privacy/uk/">Українська</a><a href="C:/Program Files/Git/gympo_site/privacy/en/" class="on">English</a><a href="C:/Program Files/Git/gympo_site/terms/en/">Terms of Use</a></nav>
+  <nav><a href="/gympo_site/privacy/">Русский</a><a href="/gympo_site/privacy/uk/">Українська</a><a href="/gympo_site/privacy/en/" class="on">English</a><a href="/gympo_site/terms/en/">Terms of Use</a></nav>
 </header>
 <h1>Gympo Privacy Policy</h1>
-<p><em>Last updated: 14 August 2026</em></p>
+<p><em>Last updated: 1 October 2026</em></p>
 <p>Gympo is a training app. This document describes what data it collects, why, and
 who it is shared with. It is written to match what the app actually does.</p>
 <h2>In short</h2>
-<p>We do not ask for your name, email or phone number. The account is created
-anonymously and exists only so that your conversation with the AI coach belongs
-to a specific device. We do not sell data, show ads, or embed analytics
+<p>Signing in is optional. Without it, the account is created anonymously and your
+workouts, food log and weight live only on your phone. If you sign in with Apple
+or Google, we receive your email and keep a backup of your data so it is not lost
+when you change phones. We do not sell data, show ads, or embed analytics
 trackers.</p>
-<h2>What stays only on your device</h2>
-<p>This data is never sent anywhere and lives in your phone's storage:</p>
+<h2>What is stored on your device</h2>
 <ul>
-<li>questionnaire answers: sex, age, height, weight, goal, training level, where
-  you train, schedule, injuries and limitations;</li>
+<li>questionnaire answers: sex, age, height, weight, goal weight, goal, training
+  level, where you train, schedule, injuries and limitations;</li>
+<li>the name you entered for your profile, and your profile photo;</li>
 <li>workout history: exercises performed, weights, reps, dates;</li>
 <li>food diary: meal names, calories, protein;</li>
 <li>morning check-ins: sleep, muscle soreness, energy level;</li>
 <li>weigh-ins;</li>
-<li>settings: language, units, chosen coach, rest time.</li>
+<li>settings: language, units, chosen coach, rest time, reminders.</li>
 </ul>
-<p>Deleting the app erases all of it along with the app.</p>
-<h2>What goes to the server</h2>
+<p>Without signing in, this data is never sent anywhere, and deleting the app erases
+it along with the app.</p>
+<h2>Sign in with Apple or Google (optional)</h2>
+<p>If you sign in, Apple or Google gives us:</p>
+<ul>
+<li>your email address (Apple lets you hide your real one — then we see an
+  anonymous Apple relay address);</li>
+<li>your name, if you chose to share it;</li>
+<li>an internal account identifier that recognises you the next time you sign in.</li>
+</ul>
+<p>We never see your password and never post anything on your behalf.</p>
+<h2>Cloud backup (only after signing in)</h2>
+<p>After you sign in, a copy of the data listed above — profile, name, profile
+photo, workout history, food diary, check-ins, weigh-ins and settings — is stored
+on our server. It updates automatically when your data changes and exists for one
+purpose only: so that everything is restored when you sign in on a new phone.
+Without signing in, no backup is made.</p>
+<h2>What else goes to the server</h2>
 <p><strong>Your conversation with the AI coach.</strong> Your messages and the coach's replies
 are stored in a database so the dialogue is not lost between app launches.</p>
 <p><strong>Profile data — at the moment you ask the coach.</strong> So that advice is
-meaningful, a short summary is sent with your question: age, sex, height,
+meaningful, a short summary is sent with your question: name, age, sex, height,
 weight, goal, level, schedule, the injuries you listed (including those you
 described in your own words), your latest check-in and your last few workouts.
 This summary is used to produce the answer and is not stored separately from the
 conversation.</p>
 <p><strong>Food photos.</strong> If you use the photo calorie estimate, the picture is sent to
-our server and on to the recognition service. <strong>Photos are not stored</strong> — not on
-our server and not in the database. Once the answer comes back, the picture
-ceases to exist.</p>
+our server and on to the recognition service. <strong>Food photos are not stored</strong> —
+not on our server and not in the database. Once the answer comes back, the
+picture ceases to exist.</p>
 <p><strong>Usage counters.</strong> For every AI request we record the number of tokens spent
 and the model name. The content of the request is not part of that record.</p>
 <p><strong>Reports.</strong> If you report a coach's reply, the text of that reply is stored
 separately so we can look into it and correct the AI's behaviour.</p>
+<h2>Reminders</h2>
+<p>Workout, missed-day and food reminders are created and shown by the phone itself.
+Nothing is sent to a server for them. You can turn them off in the app's settings
+or in iPhone Settings.</p>
 <h2>Who the data is shared with</h2>
 <ul>
-<li><strong>Supabase</strong> — database hosting and anonymous authentication.</li>
+<li><strong>Supabase</strong> — database hosting, authentication and cloud backup storage.</li>
+<li><strong>Apple and Google</strong> — sign-in, if you choose it. They confirm it is you and
+  pass us the data listed above.</li>
 <li><strong>Anthropic</strong> — processing AI coach requests and food photo recognition. The
   request text, the profile summary and the meal photo are sent.</li>
 </ul>
@@ -98,9 +121,10 @@ separately so we can look into it and correct the AI's behaviour.</p>
 <p>The app has a <strong>"Delete account and all data"</strong> button — Settings → Data. It
 deletes:</p>
 <ul>
-<li>the anonymous account;</li>
+<li>the account, together with the linked Apple or Google sign-in;</li>
+<li>the cloud backup;</li>
 <li>your entire conversation with the coach on the server;</li>
-<li>the usage log;</li>
+<li>the usage log and reports;</li>
 <li>all local data on the device.</li>
 </ul>
 <p>This cannot be undone, and we cannot recover what has been deleted.</p>
@@ -119,7 +143,7 @@ will announce significant changes in the app.</p>
 <p>For questions about your data, write to <strong>icecrusher2025@gmail.com</strong>.</p>
 <footer>
   <p>Gympo · <a href="mailto:icecrusher2025@gmail.com">icecrusher2025@gmail.com</a></p>
-  <p><a href="C:/Program Files/Git/gympo_site/privacy/">Privacy</a> · <a href="C:/Program Files/Git/gympo_site/terms/">Terms</a></p>
+  <p><a href="/gympo_site/privacy/">Privacy</a> · <a href="/gympo_site/terms/">Terms</a></p>
 </footer>
 </div>
 </body>
