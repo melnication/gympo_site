@@ -50,7 +50,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border
   <nav><a href="/gympo_site/privacy/">Українська</a><a href="/gympo_site/privacy/en/" class="on">English</a><a href="/gympo_site/privacy/ru/">Русский</a><a href="/gympo_site/terms/en/">Terms of Use</a></nav>
 </header>
 <h1>Gympo Privacy Policy</h1>
-<p><em>Last updated: 1 October 2026</em></p>
+<p><em>Last updated: 28 October 2026</em></p>
 <p>Gympo is a training app. This document describes what data it collects, why, and
 who it is shared with. It is written to match what the app actually does.</p>
 <h2>In short</h2>
@@ -104,10 +104,14 @@ picture ceases to exist.</p>
 and the model name. The content of the request is not part of that record.</p>
 <p><strong>Reports.</strong> If you report a coach's reply, the text of that reply is stored
 separately so we can look into it and correct the AI's behaviour.</p>
-<h2>Reminders</h2>
+<h2>Reminders and notifications</h2>
 <p>Workout, missed-day and food reminders are created and shown by the phone itself.
-Nothing is sent to a server for them. You can turn them off in the app's settings
-or in iPhone Settings.</p>
+Nothing is sent to a server for them.</p>
+<p>If you allow notifications, the phone sends our server its notification address
+(push token), the app language, your gender, where you train and whether you
+agreed to news. This lets Gympo tips and news reach only those who agreed to
+them, in their language. Notifications are delivered by Expo and Apple. You can
+turn off news in the app's settings, and all notifications in iPhone Settings.</p>
 <h2>Who the data is shared with</h2>
 <ul>
 <li><strong>Supabase</strong> — database hosting, authentication and cloud backup storage.</li>
@@ -115,6 +119,8 @@ or in iPhone Settings.</p>
   pass us the data listed above.</li>
 <li><strong>Anthropic</strong> — processing AI coach requests and food photo recognition. The
   request text, the profile summary and the meal photo are sent.</li>
+<li><strong>Expo</strong> — push notification delivery via Apple. The device's notification
+address and the notification text are sent.</li>
 </ul>
 <p>Nobody else. There are no ad networks and no analytics SDKs in the app.</p>
 <h2>Deleting your data</h2>
